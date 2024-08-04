@@ -48,9 +48,8 @@ left:10px;
 
 .form-group input{
   width:100%;
-  padding: 10px;
+  padding: 10px 30PX;
   border-radius: 20px;
-
 }
 .form-group label {
   position: absolute;
@@ -73,6 +72,9 @@ left:10px;
   position: relative;
   margin-bottom: 30px;
 }
+*{
+  box-sizing: border-box;
+}
 button{
   position:relative ;
   background: linear-gradient(to right, #182ab7, #071a85);
@@ -88,10 +90,12 @@ button{
 
 }
 button i{
- 
+  transition: 0.3s ;
+  position: absolute;
   right:-30px;
 }
-button i:hover{
+button:hover i{
+ 
   right: 30px;
 }
 button:hover{
