@@ -50,6 +50,10 @@ left:10px;
   width:100%;
   padding: 10px 30PX;
   border-radius: 20px;
+  background:transparent ;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #6a6363b8;
 }
 .form-group label {
   position: absolute;
@@ -75,6 +79,16 @@ left:10px;
 *{
   box-sizing: border-box;
 }
+.form-group input:focus ~ i,
+.form-group input:valid ~ i {
+    color: #0072ff;
+}
+
+.form-group input:focus,
+.form-group input:valid {
+    border-bottom-color: #0072ff;
+}
+
 button{
   position:relative ;
   background: linear-gradient(to right, #182ab7, #071a85);
